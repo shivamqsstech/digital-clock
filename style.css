@@ -1,0 +1,65 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/—Pngtree—abstract\ background\ technology\ of\ data_1316468.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    backdrop-filter: blur(10px) brightness(0.3);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0));
+    border: 6px solid black;
+    border-radius: 8px;
+    margin: 8px 8px 8px 8px;
+    padding: 20px 20px 20px 20px;
+
+}
+
+span {
+    color: white;
+    font-size: 105px;
+    display: inline-block;
+    position: relative;
+    text-align: center;
+}
+
+.container h1 {
+    color: white;
+    margin-top: 8px;
+}
+
+.time span::after {
+
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.hour::after {
+    content: "HOURS";
+}
+
+.minutes::after {
+    content: "MINS";
+}
+
+.seconds::after {
+    content: "SEC";
+}
